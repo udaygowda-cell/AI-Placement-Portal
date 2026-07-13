@@ -1,0 +1,29 @@
+# ============ Backend ============
+backend/target/
+backend/*.jar
+backend/*.war
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+uploads/
+
+# ============ Frontend ============
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.env.production.local
+
+# ============ IDE ============
+.idea/
+.vscode/
+*.iml
+*.class
+*.log
+
+# ============ OS ============
+.DS_Store
+Thumbs.db
+
+# ============ Sensitive ============
+application-prod.properties
+.env

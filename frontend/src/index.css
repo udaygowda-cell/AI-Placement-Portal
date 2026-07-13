@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-card: #111118;
+  --bg-card2: #1a1a24;
+  --border: rgba(255,255,255,0.06);
+  --accent: #00f5a0;
+  --brand: #4d75ff;
+  --text-primary: #f0f0f8;
+  --text-secondary: rgba(240,240,248,0.6);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Syne', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+
+/* Glass card */
+.glass {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #4d75ff 0%, #00f5a0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Brand button */
+.btn-brand {
+  background: linear-gradient(135deg, #4d75ff, #1a44ff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.btn-brand:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(77,117,255,0.4); }
+.btn-brand:active { transform: translateY(0); }
+
+/* Mesh gradient background */
+.mesh-bg {
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(77,117,255,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 80% 80%, rgba(0,245,160,0.06) 0%, transparent 60%),
+    #0a0a0f;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Input */
+.form-input {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 12px 16px;
+  color: #f0f0f8;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.form-input:focus {
+  border-color: #4d75ff;
+  box-shadow: 0 0 0 3px rgba(77,117,255,0.15);
+}
+.form-input::placeholder { color: rgba(240,240,248,0.3); }
+
+/* Sidebar */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: rgba(240,240,248,0.6);
+  font-weight: 500;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.sidebar-item:hover { background: rgba(255,255,255,0.06); color: #f0f0f8; }
+.sidebar-item.active { background: rgba(77,117,255,0.15); color: #4d75ff; }
+
+/* Score ring */
+.score-ring { position: relative; display: inline-flex; align-items: center; justify-content: center; }
+
+/* Tag chip */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.chip-green { background: rgba(0,245,160,0.12); color: #00f5a0; border: 1px solid rgba(0,245,160,0.2); }
+.chip-blue { background: rgba(77,117,255,0.12); color: #4d75ff; border: 1px solid rgba(77,117,255,0.2); }
+.chip-orange { background: rgba(255,165,0,0.12); color: #ffa500; border: 1px solid rgba(255,165,0,0.2); }
+.chip-red { background: rgba(255,80,80,0.12); color: #ff5050; border: 1px solid rgba(255,80,80,0.2); }
+
+/* Code font for questions */
+.q-text { font-family: 'DM Sans', sans-serif; line-height: 1.7; }
+
+/* Chat bubble */
+.chat-user { background: linear-gradient(135deg, #1a44ff, #4d75ff); border-radius: 18px 18px 4px 18px; }
+.chat-ai { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.07); border-radius: 18px 18px 18px 4px; }
