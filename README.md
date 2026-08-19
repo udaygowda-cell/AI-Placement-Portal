@@ -4,7 +4,7 @@ An AI-powered Placement Portal that streamlines campus recruitment by connecting
 
 ---
  
-## 📌 Features
+## 📌 Features m
 
 ### 👨‍🎓 Student
 - Student Registration & Login
