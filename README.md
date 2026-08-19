@@ -3,7 +3,7 @@
 An AI-powered Placement Portal that streamlines campus recruitment by connecting **Students, Recruiters, and Placement Officers** on a single platform. The system leverages Artificial Intelligence to analyze resumes, recommend suitable job opportunities, rank candidates based on job requirements, and provide real-time placement insights.
 
 ---
-
+ 
 ## 📌 Features
 
 ### 👨‍🎓 Student
