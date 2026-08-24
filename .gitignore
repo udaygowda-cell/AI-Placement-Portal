@@ -5,7 +5,7 @@ backend/*.war
 backend/.mvn/
 backend/mvnw
 backend/mvnw.cmd
-uploads///
+uploads/
 
 # ============ Frontend ============
 frontend/node_modules/
