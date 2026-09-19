@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 /**
- * Mock Interview Chatbot Controller. make the ai ss
+ * Mock Interview Chatbot Controller. make the ai 
  */
 
 @RestController
