@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 /**
- * Mock Interview Chatbot Controller. mak
+ * Mock Interview Chatbot Controller. ma
  */
 
 @RestController
