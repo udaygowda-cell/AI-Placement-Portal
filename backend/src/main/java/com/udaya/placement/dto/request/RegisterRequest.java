@@ -3,9 +3,7 @@ package com.udaya.placement.dto.request;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 
-/**
- * DTO for user registration request.
- */
+
 @Data
 public class RegisterRequest {
 
