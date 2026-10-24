@@ -1,5 +1,4 @@
 package com.udaya.placement.dto.request;
-
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
