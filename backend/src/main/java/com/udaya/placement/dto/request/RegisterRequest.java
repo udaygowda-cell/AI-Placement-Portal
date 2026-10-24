@@ -2,7 +2,6 @@ package com.udaya.placement.dto.request;
 
 import jakarta.validation.constraints.*;
 import lombok.Data;
-
 @Data
 public class RegisterRequest {
 
